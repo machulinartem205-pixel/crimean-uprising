@@ -13,6 +13,8 @@ body {
     padding: 20px;
     line-height: 1.6;
     color: #333;
+	padding-top: 90px;
+
 }
 
 /* Заголовок */
@@ -74,10 +76,50 @@ footer {
 }
 
 </style>
+	/* Верхня панель */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+/* Логотип */
+.logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(
+        to bottom,
+        #0057b7 0%,
+        #0057b7 20%,
+        white 20%,
+        white 80%,
+        #d52b1e 80%,
+        #d52b1e 100%
+    );
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+/* Ефект при наведенні */
+.logo:hover {
+    transform: scale(1.1);
+}
+
 
 	 <title>Наслідки</title>
 </head>
 <body>
+	<header>
+    <a href="index.html" class="logo"></a>
+</header>
+
 
 <h1>Наслідки</h1>
 <p>Повстання допомогло об'єднаним україно-німецьким силам, що наступали на Крим з півночі. Більшовики були змушені знімати загони з передової та перекидати їх на придушення повстань, чим послабили північні кордони.</p>
@@ -93,4 +135,5 @@ footer {
 </body>
 
 </html>
+
 
